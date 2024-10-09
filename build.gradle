@@ -20,7 +20,10 @@ repositories {
 dependencies {
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '3.3.4'
 	implementation group: 'org.springframework.integration', name: 'spring-integration-mqtt', version: '6.3.4'
-	implementation group: 'com.digitalpetri.modbus', name: 'modbus-master-tcp', version: '1.2.2'
+
+	implementation group: 'org.apache.plc4x', name: 'plc4j-api', version: '0.12.0'
+	implementation group: 'org.apache.plc4x', name: 'plc4j-driver-modbus', version: '0.12.0'
+
 	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.18.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
